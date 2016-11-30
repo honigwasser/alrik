@@ -1,0 +1,18 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - "db/*schema*.rb"
+    - "bin/*"
+    - "Guardfile"
+
+Metrics/LineLength:
+  Max: 140
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

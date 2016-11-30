@@ -1,0 +1,18 @@
+web: &app_base
+  build: .
+  container_name: helden-api
+  hostname: helden-api
+  ports:
+    - "9090:8080" # change this
+    - "3001:3000" # change this
+  volumes:
+    - .:/var/www
+  environment:
+    RAILS_ENV: development
+test:
+  <<: *app_base
+  container_name: helden-api-test
+  ports: []
+  command: bash -l -c "guard start --no-interactions"
+  environment:
+    RAILS_ENV: test
