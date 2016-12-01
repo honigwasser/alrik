@@ -15,7 +15,7 @@ require "action_view/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module HeldenApi
+module Alrik
   class Application < Rails::Application
     config.i18n.available_locales = [:en, :de, :fr, :nl]
     config.i18n.default_locale = :en

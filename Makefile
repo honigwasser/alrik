@@ -13,7 +13,7 @@ d:
 	docker-compose up -d
 
 status:
-	docker inspect helden-api
+	docker inspect alrik
 
 build:
 	docker-compose build web

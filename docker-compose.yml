@@ -1,7 +1,7 @@
 web: &app_base
   build: .
-  container_name: helden-api
-  hostname: helden-api
+  container_name: alrik
+  hostname: alrik
   ports:
     - "9090:8080" # change this
     - "3001:3000" # change this
@@ -11,7 +11,7 @@ web: &app_base
     RAILS_ENV: development
 test:
   <<: *app_base
-  container_name: helden-api-test
+  container_name: alrik-test
   ports: []
   command: bash -l -c "guard start --no-interactions"
   environment:
