@@ -50,8 +50,6 @@ group :staging, :production do
   gem "slack", gitblit: "gems/slack"
 end
 
-gem "statsd-instrument-config", gitblit: "gems/statsd-instrument-config"
 gem "geist", gitblit: "gems/geist"
 gem "jenny", gitblit: "gems/jenny"
 gem "sesam", gitblit: "gems/sesam"
-gem "hase", gitblit: "gems/hase"
