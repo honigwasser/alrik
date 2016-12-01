@@ -19,4 +19,4 @@
 !/log/.keep
 /tmp
 /coverage
-/config/database.yml
+# /config/database.yml
