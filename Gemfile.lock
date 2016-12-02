@@ -1,71 +1,16 @@
 GIT
-  remote: git://git.pressrelations.de/gems/baby_bouncer.git
-  revision: 9c67b60d979d626f35f53c0be0dcbb9a0768df82
-  specs:
-    baby_bouncer (0.0.4)
-      composite_primary_keys
-      jwt
-      rails (>= 4.1)
-
-GIT
-  remote: git://git.pressrelations.de/gems/geist.git
-  revision: 697cb5189ee03dc4e5265a9b4543f4cdcb9a971e
-  specs:
-    geist (0.0.2)
-      rails (>= 4.1)
-      statsd-instrument (>= 2.0)
-      sys-uname (>= 0.9)
-
-GIT
-  remote: git://git.pressrelations.de/gems/hase.git
-  revision: 8052beb8f957e00f256025e4b055bca283b6205b
-  specs:
-    hase (0.0.2)
-      bunny (~> 2.3)
-
-GIT
-  remote: git://git.pressrelations.de/gems/jenny.git
-  revision: f6b7e092b8ce46d2395b21c0796ebd92ade328b6
-  specs:
-    jenny (0.0.1)
-      rails (>= 4.1)
-
-GIT
-  remote: git://git.pressrelations.de/gems/protokoll-rails.git
-  revision: 669936d0f47d948864f2485d5134139f276bd528
-  specs:
-    protokoll-rails (0.0.4)
-      protokoll (>= 0.0.7)
-      rails (~> 4.1)
-
-GIT
-  remote: git://git.pressrelations.de/gems/protokoll.git
-  revision: c7035365fcb02f3c5f446898d69a580aa410cb71
-  specs:
-    protokoll (0.0.7)
-      logstash-event
-
-GIT
-  remote: git://git.pressrelations.de/gems/sesam.git
-  revision: 479f6a5c1a359df58f983bbf5306b5e83b34866c
+  remote: https://github.com/honigwasser/gem-sesam.git
+  revision: ad321b34ad64190f1568536a444759e6787eddf0
   specs:
     sesam (0.0.1)
       rails (>= 4.1)
 
 GIT
-  remote: git://git.pressrelations.de/gems/slack.git
-  revision: 51f31f8e7b906debce6d3476018a4bf6891051ce
+  remote: https://github.com/honigwasser/gem-slack.git
+  revision: 1ac9b90ec164881b3310ada751f2af0155fb3b80
   specs:
     slack (0.0.1)
       rails (~> 4.2)
-
-GIT
-  remote: git://git.pressrelations.de/gems/statsd-instrument-config.git
-  revision: 2cc19b3421cdf9f486727d3e6ffa07cca6c54ba7
-  specs:
-    statsd-instrument-config (0.0.2)
-      rails (>= 4.1)
-      statsd-instrument (>= 2.0)
 
 GIT
   remote: https://github.com/nicolasblanco/rails_param.git
@@ -120,13 +65,10 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
-    amq-protocol (2.0.1)
     ansi (1.5.0)
     arel (6.0.3)
     ast (2.3.0)
     builder (3.2.2)
-    bunny (2.6.1)
-      amq-protocol (>= 2.0.1)
     coderay (1.1.1)
     composite_primary_keys (8.1.4)
       activerecord (~> 4.2.0)
@@ -172,7 +114,6 @@ GEM
     json_expressions (0.8.3)
     jsonapi (0.1.1.beta2)
       json (~> 1.8)
-    jwt (1.5.6)
     kaminari (0.17.0)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -181,7 +122,6 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    logstash-event (1.2.02)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     lumberjack (1.0.10)
@@ -192,8 +132,8 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
-    minitest (5.10.0)
-    minitest-reporters (1.1.12)
+    minitest (5.10.1)
+    minitest-reporters (1.1.13)
       ansi
       builder
       minitest (>= 5.0)
@@ -205,7 +145,7 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    parser (2.3.3.0)
+    parser (2.3.3.1)
       ast (~> 2.2)
     powerpack (0.1.1)
     pry (0.10.4)
@@ -300,9 +240,6 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.3.12)
-    statsd-instrument (2.1.1)
-    sys-uname (1.0.3)
-      ffi (>= 1.0.0)
     thor (0.19.4)
     thread_safe (0.3.5)
     timecop (0.8.1)
@@ -324,22 +261,16 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   activerecord-sqlserver-adapter
-  baby_bouncer!
   composite_primary_keys
   factory_girl_rails
   faker
-  geist!
   guard-rspec
   guard-rubocop
-  hase!
   jbuilder (~> 2.0)
-  jenny!
   json-schema
   json_expressions
   kaminari
   minitest-reporters
-  protokoll!
-  protokoll-rails!
   pry-rails
   rack-cors
   rails
@@ -353,11 +284,10 @@ DEPENDENCIES
   spring
   spring-commands-rspec
   sqlite3
-  statsd-instrument-config!
   timecop
   tiny_tds
   unicorn
   unicorn-rails
 
 BUNDLED WITH
-   1.12.5
+   1.13.1
