@@ -1,6 +1,6 @@
 source "https://rubygems.org"
-git_source(:gitblit) { |repo_name| "git://git.pressrelations.de/#{repo_name}.git" }
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
+git_source(:honigwasser) { |repo_name| "https://github.com/honigwasser/#{repo_name}.git" }
 
 gem "rails"
 gem "rails-api"
@@ -37,19 +37,14 @@ group :test do
 end
 
 group :development, :staging, :production do
-  gem "protokoll", gitblit: "gems/protokoll"
-  gem "protokoll-rails", gitblit: "gems/protokoll-rails"
   gem "unicorn"
   gem "unicorn-rails"
-  gem "baby_bouncer", gitblit: "gems/baby_bouncer"
 end
 
 group :staging, :production do
   gem "tiny_tds"
   gem "activerecord-sqlserver-adapter"
-  gem "slack", gitblit: "gems/slack"
+  gem "slack", honigwasser: "gem-slack"
 end
 
-gem "geist", gitblit: "gems/geist"
-gem "jenny", gitblit: "gems/jenny"
-gem "sesam", gitblit: "gems/sesam"
+gem "sesam", honigwasser: "gem-sesam"
