@@ -4,6 +4,9 @@ FactoryGirl.define do
   factory :character do
     uuid { "char-" + SecureRandom.uuid }
     name { Faker::Superhero.name }
+    race { Faker::StarWars.specie }
+    profession { Faker::Company.profession }
+    sex { Faker::Hacker.abbreviation }
 
     created_at { Time.zone.now }
     updated_at { Time.zone.now }
@@ -11,7 +14,7 @@ FactoryGirl.define do
     created_by { 1 }
     updated_by { 1 }
 
-    after(:build) do |char|
+    after(:create) do |char|
       rand(10..20).times do
         char.talents << build(:talent)
       end

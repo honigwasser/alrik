@@ -7,18 +7,13 @@
         "name" : { "type": [ "string" ] },
         "race": { "type": [ "string" ] },
         "profession": { "type": [ "string" ] },
-        "physique": {
-          "type": "object",
-          "properties": {
-            "gender": { "type": [ "string" ] },
-            "age": { "type": [ "integer" ] },
-            "height": { "type": [ "integer" ] },
-            "weight": { "type": [ "integer" ] },
-            "eye_color": { "type": [ "string" ] },
-            "hair_color": { "type": [ "string" ] }
-          }
-        },
-        "attributes": {
+        "sex": { "type": [ "string" ] },
+        "age": { "type": [ "integer" ] },
+        "height": { "type": [ "integer" ] },
+        "weight": { "type": [ "integer" ] },
+        "eye_color": { "type": [ "string" ] },
+        "hair_color": { "type": [ "string" ] },
+        "properties": {
           "type": "object",
           "properties": {
             "courage": { "type": [ "integer" ] },
