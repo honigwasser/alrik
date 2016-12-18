@@ -2,7 +2,6 @@ require 'faker'
 
 FactoryGirl.define do
   factory :character do
-    uuid { "char-" + SecureRandom.uuid }
     name { Faker::Superhero.name }
     race { Faker::StarWars.specie }
     profession { Faker::Company.profession }

@@ -2,7 +2,6 @@
 ActiveRecord::Schema.define(version: 0) do
 
   create_table "characters", force: :cascade do |t|
-    t.text "uuid", null: false
     t.text "name", null: false
     t.text "race", null: false
     t.text "profession", null: false
@@ -20,7 +19,6 @@ ActiveRecord::Schema.define(version: 0) do
   end
 
   create_table "talents", force: :cascade do |t|
-    t.text "uuid", null: false
     t.text "name", null: false
     t.text "talent_type"
     t.text "category"
