@@ -3,16 +3,16 @@ class CharactersController < ApplicationController
 
   def show
     params.permit!
-    render json: Characters.find_by(name: params[:name])
+    render json: Character.find_by(id: params[:id])
   end
 
   def index
-    render json: Characters.order(created_at: :desc).limit(100), each_serializer: CompactCharacterSerializer
+    render json: Character.order(created_at: :desc).limit(100), each_serializer: CompactCharacterSerializer
   end
 
   def export
     params.permit!
-    render json: Characters.find_by(name: params[:name]), serializer: ExportCharacterSerializer
+    render json: Character.find_by(id: params[:id]), serializer: ExportCharacterSerializer
   end
 
   # POST
