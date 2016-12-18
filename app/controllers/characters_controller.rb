@@ -3,7 +3,7 @@ class CharactersController < ApplicationController
 
   def show
     params.permit!
-    render json: Character.find_by(id: params[:id])
+    render json: Character.find(params[:id])
   end
 
   def index
@@ -12,7 +12,7 @@ class CharactersController < ApplicationController
 
   def export
     params.permit!
-    render json: Character.find_by(id: params[:id]), serializer: ExportCharacterSerializer
+    render json: Character.find(params[:id]), serializer: ExportCharacterSerializer
   end
 
   # POST
