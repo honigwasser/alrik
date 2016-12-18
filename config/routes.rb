@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   opts = { defaults: { format: :json } }
 
+  get "characters/:id/export", opts.merge(to: "characters#export")
+  get "characters/:id", opts.merge(to: "characters#show")
   get "characters", opts.merge(to: "characters#index")
-  get "characters/:name", opts.merge(to: "characters#show")
-  get "characters/:name/export", opts.merge(to: "characters#export")
 
   post "characters", opts.merge(to: "characters#create")
 
