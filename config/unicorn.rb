@@ -58,11 +58,12 @@ after_fork do |_server, _worker|
 end
 
 # Unicorn events should be logged as JSON in Logstash format
-require 'logstash-event'
+# require 'logstash-event'
 
-logger = Logger.new(STDOUT)
-logger.formatter = proc do |severity, _datetime, _progname, msg|
-  log = LogStash::Event.new(severity: severity, message: msg).to_json
-  "#{log}\n"
-end
-logger(logger)
+# logger = Logger.new(STDOUT)
+# logger.formatter = proc do |severity, _datetime, _progname, msg|
+#   log = LogStash::Event.new(severity: severity, message: msg).to_json
+#   "#{log}\n"
+# end
+
+# logger(logger)
