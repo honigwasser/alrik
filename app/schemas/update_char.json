@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "id" : { "type": [ "integer" ] },
+        "name" : { "type": [ "string" ] },
+        "race": { "type": [ "string" ] },
+        "profession": { "type": [ "string" ] },
+        "sex": { "type": [ "string" ] },
+        "age": { "type": [ "integer" ] },
+        "height": { "type": [ "integer" ] },
+        "weight": { "type": [ "integer" ] },
+        "eye_color": { "type": [ "string" ] },
+        "hair_color": { "type": [ "string" ] },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "courage": { "type": [ "integer" ] },
+            "wisdom": { "type": [ "integer" ] },
+            "intuition": { "type": [ "integer" ] },
+            "charisma": { "type": [ "integer" ] },
+            "agility": { "type": [ "integer" ] },
+            "dexterity": { "type": [ "integer" ] },
+            "constitution": { "type": [ "integer" ] },
+            "strength": { "type": [ "integer" ] },
+            "social_status": { "type": [ "integer" ] }
+          }
+        }
+      },
+      "required": [ "id" ]
+    }
+  },
+  "required": [ "data" ],
+  "additionalProperties": false
+}
