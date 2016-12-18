@@ -8,6 +8,7 @@ gem "rack-cors", require: "rack/cors"
 gem "rails"
 gem "rails-api"
 gem "rails_param", github: "nicolasblanco/rails_param", ref: "c806552361b7c820b050bbf52f5a772a2b40048b"
+gem "sys-uname"
 
 gem "composite_primary_keys"
 gem "jbuilder", "~> 2.0"
