@@ -13,7 +13,7 @@
         "weight": { "type": [ "integer" ] },
         "eye_color": { "type": [ "string" ] },
         "hair_color": { "type": [ "string" ] },
-        "properties": {
+        "basic_attributes": {
           "type": "object",
           "properties": {
             "courage": { "type": [ "integer" ] },

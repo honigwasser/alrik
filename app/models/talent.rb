@@ -1,4 +1,4 @@
 class Talent < ActiveRecord::Base
-  has_many :characters, through: :characters_talents
-  has_many :characters_talents
+  belongs_to :character
+  belongs_to :talent_type
 end

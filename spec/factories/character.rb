@@ -6,6 +6,11 @@ FactoryGirl.define do
     race { Faker::StarWars.specie }
     profession { Faker::Company.profession }
     sex { Faker::Hacker.abbreviation }
+    age { 17 }
+    weight { 84 }
+    height { 184 }
+    eye_color { "grey" }
+    hair_color { "black" }
 
     created_at { Time.zone.now }
     updated_at { Time.zone.now }
@@ -17,6 +22,7 @@ FactoryGirl.define do
       rand(10..20).times do
         char.talents << build(:talent)
       end
+      char.basic_attributes << build(:basic_attribute)
     end
   end
 end
