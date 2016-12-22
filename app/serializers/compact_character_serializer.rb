@@ -1,3 +1,3 @@
 class CompactCharacterSerializer < ActiveModel::Serializer
-  attributes :name, :race, :profession
+  attributes :id, :name, :race, :profession
 end

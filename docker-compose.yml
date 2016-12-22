@@ -3,7 +3,7 @@ web: &app_base
   container_name: alrik
   hostname: alrik
   ports:
-    - "9090:8080" # change this
+    - "9099:8080" # change this
     - "3001:3000" # change this
   volumes:
     - .:/var/www
