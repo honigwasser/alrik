@@ -8,7 +8,7 @@ gem "rack-cors", require: "rack/cors"
 gem "rails", "4.2.10"
 gem "rails-api"
 gem "rails_param", github: "nicolasblanco/rails_param", ref: "c806552361b7c820b050bbf52f5a772a2b40048b"
-gem "sqlite3"
+gem "sqlite3", "1.3.13"
 gem "sys-uname"
 
 gem "composite_primary_keys"
