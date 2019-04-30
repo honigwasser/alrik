@@ -4,10 +4,10 @@ up:
 	docker-compose up
 
 it:
-	docker-compose run web bash -l
+	docker-compose run app bash -l
 
 clone:
-	docker-compose run --service-ports web bash -l
+	docker-compose run --service-ports app bash -l
 
 d:
 	docker-compose up -d
@@ -16,4 +16,4 @@ status:
 	docker inspect alrik
 
 build:
-	docker-compose build web
+	docker-compose build app

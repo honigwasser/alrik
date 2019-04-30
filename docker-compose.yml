@@ -1,4 +1,4 @@
-web: &app_base
+app: &app_base
   build: .
   container_name: alrik
   hostname: alrik
