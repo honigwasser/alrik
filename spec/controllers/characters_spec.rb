@@ -6,6 +6,7 @@ describe CharactersController do
     {
       characters: [
         {
+          id: Integer,
           name: String,
           race: String,
           profession: String
@@ -25,7 +26,7 @@ describe CharactersController do
       it "should show all caharcters" do
         create(:character)
         get :index
-        expect(response.body).to match_json_expression(index_pattern)
+        expect(JSON.parse(response.body).deep_symbolize_keys).to match_json_expression(index_pattern)
       end
     end
   end
@@ -34,9 +35,9 @@ describe CharactersController do
     context "valid requests" do
       it "should show a single character" do
         char = create(:character, name: "Ottokar")
-        get :show, id: char.id # rubocop:disable HttpPositionalArguments
+        get :show, id: char.id
         expect(Character.count).to eq(1)
-        expect(response.body).to match_json_expression(show_pattern)
+        expect(JSON.parse(response.body).deep_symbolize_keys).to match_json_expression(show_pattern)
       end
     end
   end
