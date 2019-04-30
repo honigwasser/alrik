@@ -5,7 +5,7 @@ git_source(:honigwasser) { |repo_name| "https://github.com/honigwasser/#{repo_na
 gem "active_model_serializers"
 gem "kaminari"
 gem "rack-cors", require: "rack/cors"
-gem "rails"
+gem "rails", "4.2.10"
 gem "rails-api"
 gem "rails_param", github: "nicolasblanco/rails_param", ref: "c806552361b7c820b050bbf52f5a772a2b40048b"
 gem "sys-uname"
@@ -15,7 +15,7 @@ gem "jbuilder", "~> 2.0"
 gem "json-schema"
 
 group :development, :test do
-  gem "factory_girl_rails"
+  gem "factory_bot_rails"
   gem "guard-rspec"
   gem "guard-rubocop"
   gem "json_expressions"

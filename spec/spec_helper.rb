@@ -5,7 +5,7 @@ SimpleCov.start 'rails' do
   formatter SimpleCov::Formatter::HTMLFormatter
 end
 
-require 'factory_girl_rails'
+require 'factory_bot_rails'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -13,7 +13,7 @@ RSpec.configure do |config|
   end
 
   config.fail_fast = true
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true

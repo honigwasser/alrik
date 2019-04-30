@@ -1,6 +1,6 @@
 require 'faker'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :talent do
     value { Faker::Number.number(2) }
     created_at { Time.zone.now }

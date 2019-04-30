@@ -1,6 +1,6 @@
 require 'faker'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :character do
     name { Faker::Superhero.name }
     race { Faker::StarWars.specie }
